@@ -7,7 +7,9 @@
     "build": "mdx-deck build deck.mdx",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
-    "help": "mdx-deck"
+    "help": "mdx-deck",
+    "build": "mdx-deck build deck.mdx",
+    "build-github-pages": "mdx-deck --out-dir docs build deck.mdx"
   },
   "keywords": [],
   "author": "Brent Jackson",
