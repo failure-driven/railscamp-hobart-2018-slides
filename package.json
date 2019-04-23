@@ -8,14 +8,17 @@
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck",
-    "build": "mdx-deck build deck.mdx",
     "build-github-pages": "mdx-deck --out-dir docs build deck.mdx"
   },
   "keywords": [],
   "author": "Brent Jackson",
   "license": "MIT",
   "devDependencies": {
+    "file-loader": "^3.0.1",
     "mdx-deck": "^1.6.7"
   },
-  "name": "railscamp-hobart-2018-slides"
+  "name": "railscamp-hobart-2018-slides",
+  "dependencies": {
+    "styled-components": "^4.2.0"
+  }
 }
