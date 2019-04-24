@@ -1,3 +1,9 @@
+# #TheRailsCampProject
+
+[Presentation
+slides](https://failure-driven.github.io/railscamp-hobart-2018-slides/) for
+[Ruby Melbourne 25th April
+2019](https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/events/hrznsqyzgbgc/)
 
 # mdx-deck basic template
 
