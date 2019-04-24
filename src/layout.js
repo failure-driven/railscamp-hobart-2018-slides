@@ -56,11 +56,11 @@ const Layout = ({ children }) => (
       <DivRight>
         <TwitterAvatar
           handle="@selenasmall88"
-          src="/images/selena_small_twitter.jpg"
+          src="./images/selena_small_twitter.jpg"
         />
         <TwitterAvatar
           handle="@saramic"
-          src="/images/michael_milewski_twitter.jpg"
+          src="./images/michael_milewski_twitter.jpg"
         />
       </DivRight>
     </Header>
