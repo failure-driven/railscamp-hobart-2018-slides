@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+
+        const commits = [
+          {
+            commitNum: 43,
+            commit: "9a0d062cd89f29a426450974f343d4fcb9f530d5",
+            author: "saramic",
+            date: "Mon Nov 26 10:03:09 2018 +1100",
+            startTime: new Date(2018, 10, 26, 9, 33, 9).getTime(),
+            time: new Date(2018, 10, 26, 10, 3, 9).getTime()
+          },
+          {
+            commitNum: 42,
+            commit: "e44837b15016d6bc4311541a0e247b320e05789b",
+            author: "saramic",
+            date: "Mon Nov 26 09:33:48 2018 +1100",
+            startTime: new Date(2018, 10, 26, 9, 3, 48).getTime(),
+            time: new Date(2018, 10, 26, 9, 33, 48).getTime()
+          },
+          {
+            commitNum: 41,
+            commit: "b95d142818fcb6c995730559ba284d7c0bd2e807",
+            author: "saramic",
+            date: "Mon Nov 26 02:55:15 2018 +1100",
+            startTime: new Date(2018, 10, 26, 2, 25, 15).getTime(),
+            time: new Date(2018, 10, 26, 2, 55, 15).getTime()
+          },
+          {
+            commitNum: 40,
+            commit: "035d56e959f1260c2234cb4512aac3dcc808ebcf",
+            author: "saramic",
+            date: "Mon Nov 26 02:38:56 2018 +1100",
+            startTime: new Date(2018, 10, 26, 2, 8, 56).getTime(),
+            time: new Date(2018, 10, 26, 2, 38, 56).getTime()
+          },
+          {
+            commitNum: 39,
+            commit: "5cff9e5c2f631491884f1c550b1838a721e938c6",
+            author: "saramic",
+            date: "Mon Nov 26 01:51:00 2018 +1100",
+            startTime: new Date(2018, 10, 26, 1, 21, 0).getTime(),
+            time: new Date(2018, 10, 26, 1, 51, 0).getTime()
+          },
+          {
+            commitNum: 38,
+            commit: "fc82f185dcb4bbb44114c42a24159201ebc535d2",
+            author: "saramic",
+            date: "Mon Nov 26 01:29:51 2018 +1100",
+            startTime: new Date(2018, 10, 26, 0, 59, 51).getTime(),
+            time: new Date(2018, 10, 26, 1, 29, 51).getTime()
+          },
+          {
+            commitNum: 37,
+            commit: "0c19e0289d511254f7a9ee3818554efeb61c4c34",
+            author: "saramic",
+            date: "Mon Nov 26 00:36:12 2018 +1100",
+            startTime: new Date(2018, 10, 26, 0, 6, 12).getTime(),
+            time: new Date(2018, 10, 26, 0, 36, 12).getTime()
+          },
+          {
+            commitNum: 36,
+            commit: "73e68261b2253fb08e8ae84b4efae29a1a2799e3",
+            author: "saramic",
+            date: "Sun Nov 25 23:41:40 2018 +1100",
+            startTime: new Date(2018, 10, 25, 23, 10, 40).getTime(),
+            time: new Date(2018, 10, 25, 23, 41, 40).getTime()
+          },
+          {
+            commitNum: 35,
+            commit: "b278e9f269e94ab6809bb7c3b4838720f5afdbd0",
+            author: "saramic",
+            date: "Sun Nov 25 22:58:29 2018 +1100",
+            startTime: new Date(2018, 10, 25, 22, 28, 29).getTime(),
+            time: new Date(2018, 10, 25, 22, 58, 29).getTime()
+          },
+          {
+            commitNum: 34,
+            commit: "b089db4d43809251c5a29b1341e89c9dc65a2a51",
+            author: "saramic",
+            date: "Sun Nov 25 22:07:50 2018 +1100",
+            startTime: new Date(2018, 10, 25, 21, 37, 50).getTime(),
+            time: new Date(2018, 10, 25, 22, 7, 50).getTime()
+          },
+          {
+            commitNum: 33,
+            commit: "54906182a6b615816ffb9515a041d3705c6c4e1a",
+            author: "saramic",
+            date: "Sun Nov 25 21:37:12 2018 +1100",
+            startTime: new Date(2018, 10, 25, 21, 7, 12).getTime(),
+            time: new Date(2018, 10, 25, 21, 37, 12).getTime()
+          },
+          {
+            commitNum: 32,
+            commit: "6d1e4b0db1f232728bf7da6769c50f8dc0315985",
+            author: "saramic",
+            date: "Sun Nov 25 20:36:35 2018 +1100",
+            startTime: new Date(2018, 10, 25, 20, 6, 35).getTime(),
+            time: new Date(2018, 10, 25, 20, 36, 35).getTime()
+          },
+          {
+            commitNum: 31,
+            commit: "479aa0dfbe640d6cd59aad95c689c7936db27fe8",
+            author: "saramic",
+            date: "Sun Nov 25 20:27:55 2018 +1100",
+            startTime: new Date(2018, 10, 25, 19, 57, 55).getTime(),
+            time: new Date(2018, 10, 25, 20, 27, 55).getTime()
+          },
+          {
+            commitNum: 30,
+            commit: "74154c0754ba9d00eb69fc923fdd3d816ad0efcd",
+            author: "saramic",
+            date: "Sun Nov 25 19:36:47 2018 +1100",
+            startTime: new Date(2018, 10, 25, 19, 6, 47).getTime(),
+            time: new Date(2018, 10, 25, 19, 36, 47).getTime()
+          },
+          {
+            commitNum: 29,
+            commit: "9b58b9134dec521d596008b906498a4ed6c96fb4",
+            author: "saramic",
+            date: "Sun Nov 25 19:07:14 2018 +1100",
+            startTime: new Date(2018, 10, 25, 18, 37, 14).getTime(),
+            time: new Date(2018, 10, 25, 19, 7, 14).getTime()
+          },
+          {
+            commitNum: 28,
+            commit: "e360d49051dc90c16337743a2f717940b264c235",
+            author: "saramic",
+            date: "Sun Nov 25 18:19:42 2018 +1100",
+            startTime: new Date(2018, 10, 25, 17, 49, 42).getTime(),
+            time: new Date(2018, 10, 25, 18, 19, 42).getTime()
+          },
+          {
+            commitNum: 27,
+            commit: "e380e416d5f5ca6b2f31b23968a0fd89db727184",
+            author: "saramic",
+            date: "Sun Nov 25 18:09:34 2018 +1100",
+            startTime: new Date(2018, 10, 25, 17, 39, 34).getTime(),
+            time: new Date(2018, 10, 25, 18, 9, 34).getTime()
+          },
+          {
+            commitNum: 26,
+            commit: "e569b32e59836461a28c9fc528471b13952b7315",
+            author: "saramic",
+            date: "Sun Nov 25 17:53:58 2018 +1100",
+            startTime: new Date(2018, 10, 25, 17, 23, 58).getTime(),
+            time: new Date(2018, 10, 25, 17, 53, 58).getTime()
+          },
+          {
+            commitNum: 25,
+            commit: "c552673973001e001fd82ccb128e89da3494960a",
+            author: "saramic",
+            date: "Sun Nov 25 17:17:40 2018 +1100",
+            startTime: new Date(2018, 10, 25, 16, 47, 40).getTime(),
+            time: new Date(2018, 10, 25, 17, 17, 40).getTime()
+          },
+          {
+            commitNum: 24,
+            commit: "bb126b8a51f9a8bfaafa7c9007bb0c05bb3f8a47",
+            author: "saramic",
+            date: "Sun Nov 25 17:10:51 2018 +1100",
+            startTime: new Date(2018, 10, 25, 16, 40, 51).getTime(),
+            time: new Date(2018, 10, 25, 17, 10, 51).getTime()
+          },
+          {
+            commitNum: 23,
+            commit: "dd8106b417fedf8f7f777e0443ab7f7d98f36e23",
+            author: "saramic",
+            date: "Sun Nov 25 15:47:20 2018 +1100",
+            startTime: new Date(2018, 10, 25, 15, 17, 20).getTime(),
+            time: new Date(2018, 10, 25, 15, 47, 20).getTime()
+          },
+          {
+            commitNum: 22,
+            commit: "29385d82754ddd295deb63a87e4a0dfc36e1af47",
+            author: "saramic",
+            date: "Sun Nov 25 14:58:30 2018 +1100",
+            startTime: new Date(2018, 10, 25, 14, 28, 30).getTime(),
+            time: new Date(2018, 10, 25, 14, 58, 30).getTime()
+          },
+          {
+            commitNum: 21,
+            commit: "72d3db6ed2cbe29ab6e24d278022ed9a663c490c",
+            author: "saramic",
+            date: "Sun Nov 25 14:08:23 2018 +1100",
+            startTime: new Date(2018, 10, 25, 13, 38, 23).getTime(),
+            time: new Date(2018, 10, 25, 14, 8, 23).getTime()
+          },
+          {
+            commitNum: 20,
+            commit: "7033765db1a15186505220cb45d5329c372c415d",
+            author: "saramic",
+            date: "Sun Nov 25 13:05:48 2018 +1100",
+            startTime: new Date(2018, 10, 25, 12, 35, 48).getTime(),
+            time: new Date(2018, 10, 25, 13, 5, 48).getTime()
+          },
+          {
+            commitNum: 19,
+            commit: "0e4321b3140af8d9e391826783b2efe0f0560bf9",
+            author: "saramic",
+            date: "Sun Nov 25 12:13:49 2018 +1100",
+            startTime: new Date(2018, 10, 25, 10, 43, 49).getTime(),
+            time: new Date(2018, 10, 25, 12, 13, 49).getTime()
+          },
+          {
+            commitNum: 18,
+            commit: "9cf363e1ffbafc340414f6d161c6c095a43fcae9",
+            author: "saramic",
+            date: "Sun Nov 25 11:02:04 2018 +1100",
+            startTime: new Date(2018, 10, 25, 10, 32, 4).getTime(),
+            time: new Date(2018, 10, 25, 10, 2, 4).getTime()
+          },
+          {
+            commitNum: 17,
+            commit: "31c435c503177f09a65b21528379900b6d890439",
+            author: "saramic",
+            date: "Sun Nov 25 10:26:47 2018 +1100",
+            startTime: new Date(2018, 10, 25, 9, 56, 47).getTime(),
+            time: new Date(2018, 10, 25, 10, 26, 47).getTime()
+          },
+          {
+            commitNum: 16,
+            commit: "ae4da77bd8183acee392c4d0a68b655d87f474fd",
+            author: "saramic",
+            date: "Sun Nov 25 09:20:14 2018 +1100",
+            startTime: new Date(2018, 10, 25, 8, 50, 14).getTime(),
+            time: new Date(2018, 10, 25, 9, 20, 14).getTime()
+          },
+          {
+            commitNum: 15,
+            commit: "f098ea1286bb64c02318e38e9fb402b186590b7c",
+            author: "saramic",
+            date: "Sun Nov 25 02:38:53 2018 +1100",
+            startTime: new Date(2018, 10, 25, 2, 8, 53).getTime(),
+            time: new Date(2018, 10, 25, 2, 38, 53).getTime()
+          },
+          {
+            commitNum: 14,
+            commit: "2b21d630629f8a4ef5fdb29f7a134cdfefaaa1e3",
+            author: "saramic",
+            date: "Sun Nov 25 02:17:13 2018 +1100",
+            startTime: new Date(2018, 10, 25, 1, 47, 13).getTime(),
+            time: new Date(2018, 10, 25, 2, 17, 13).getTime()
+          },
+          {
+            commitNum: 13,
+            commit: "bff4a932a8518f82be1a3d83692da50d8c14ae0e",
+            author: "saramic",
+            date: "Sun Nov 25 01:53:35 2018 +1100",
+            startTime: new Date(2018, 10, 25, 1, 23, 35).getTime(),
+            time: new Date(2018, 10, 25, 1, 53, 35).getTime()
+          },
+          {
+            commitNum: 12,
+            commit: "e1dbe3e3ee8d2fe325db8884eb674b3b035ac26d",
+            author: "saramic",
+            date: "Sun Nov 25 00:16:04 2018 +1100",
+            startTime: new Date(2018, 10, 24, 23, 46, 4).getTime(),
+            time: new Date(2018, 10, 25, 0, 16, 4).getTime()
+          },
+          {
+            commitNum: 11,
+            commit: "d94e2cc3f89a11a2d33799f7314e5fdbaefed79b",
+            author: "saramic",
+            date: "Sun Nov 25 00:00:13 2018 +1100",
+            startTime: new Date(2018, 10, 24, 23, 30, 13).getTime(),
+            time: new Date(2018, 10, 25, 0, 0, 13).getTime()
+          },
+          {
+            commitNum: 10,
+            commit: "41ca4d41985d65ffdacd8cc37b22e4cad3329893",
+            author: "saramic",
+            date: "Sat Nov 24 20:10:36 2018 +1100",
+            startTime: new Date(2018, 10, 24, 19, 40, 36).getTime(),
+            time: new Date(2018, 10, 24, 20, 10, 36).getTime()
+          },
+          {
+            commitNum: 9,
+            commit: "62b614eb49ae31593a52604b74535142326c667c",
+            author: "saramic",
+            date: "Sat Nov 24 18:26:22 2018 +1100",
+            startTime: new Date(2018, 10, 24, 17, 56, 22).getTime(),
+            time: new Date(2018, 10, 24, 18, 26, 22).getTime()
+          },
+          {
+            commitNum: 8,
+            commit: "5f2f45c6243e62da4207a4e7811e9721f015ddfc",
+            author: "saramic",
+            date: "Sat Nov 24 18:10:14 2018 +1100",
+            startTime: new Date(2018, 10, 24, 17, 40, 14).getTime(),
+            time: new Date(2018, 10, 24, 18, 10, 14).getTime()
+          },
+          {
+            commitNum: 7,
+            commit: "76caa230579afee53177b42a4c284353406f4e7f",
+            author: "saramic",
+            date: "Sat Nov 24 17:47:48 2018 +1100",
+            startTime: new Date(2018, 10, 24, 17, 17, 48).getTime(),
+            time: new Date(2018, 10, 24, 17, 47, 48).getTime()
+          },
+          {
+            commitNum: 6,
+            commit: "74791c0fa7e5029bc6f903d44be05af1c50ee805",
+            author: "saramic",
+            date: "Sat Nov 24 17:19:12 2018 +1100",
+            startTime: new Date(2018, 10, 24, 16, 49, 12).getTime(),
+            time: new Date(2018, 10, 24, 17, 19, 12).getTime()
+          },
+          {
+            commitNum: 5,
+            commit: "8e85e82e85475f8f09037e7f82a36187908ae2f1",
+            author: "saramic",
+            date: "Sat Nov 24 16:07:38 2018 +1100",
+            startTime: new Date(2018, 10, 24, 15, 37, 38).getTime(),
+            time: new Date(2018, 10, 24, 16, 7, 38).getTime()
+          },
+          {
+            commitNum: 4,
+            commit: "22212c2fea974af1975035dfe3bcdc375bc6dc44",
+            author: "saramic",
+            date: "Sat Nov 24 15:22:19 2018 +1100",
+            startTime: new Date(2018, 10, 24, 14, 52, 19).getTime(),
+            time: new Date(2018, 10, 24, 15, 22, 19).getTime()
+          },
+          {
+            commitNum: 3,
+            commit: "0f515e5ecc3baab3a99cdb408d40623b773efc18",
+            author: "isikyus",
+            date: "Sat Nov 24 14:48:43 2018 +1100",
+            startTime: new Date(2018, 10, 24, 14, 18, 43).getTime(),
+            time: new Date(2018, 10, 24, 14, 48, 43).getTime()
+          },
+          {
+            commitNum: 2,
+            commit: "de721fedc8075f7864c9aac4e239f794f42c8a17",
+            author: "kcomandich",
+            date: "Sat Nov 24 12:53:05 2018 +1100",
+            startTime: new Date(2018, 10, 24, 12, 23, 5).getTime(),
+            time: new Date(2018, 10, 24, 12, 53, 5).getTime()
+          },
+          {
+            commitNum: 1,
+            commit: "f6d9b9d11923758c36a0793f26d8392ea0cba397",
+            author: "noiselessdwindle",
+            date: "Sat Nov 24 11:52:19 2018 +1100",
+            startTime: new Date(2018, 10, 24, 10, 22, 19).getTime(),
+            time: new Date(2018, 10, 24, 10, 52, 19).getTime()
+          },
+        ];
+
+        var chart = new CanvasJS.Chart("chartContainer",
+          {
+            title: {
+              text: "Full Weekend"
+            },
+            axisY: {
+              minimum: (new Date(2018, 10, 24, 10, 0)).getTime(),
+              interval: (4 * 60 * 60 * 1000),
+              labelFormatter: function (e) {
+                return CanvasJS.formatDate(e.value, "DD - h:mm TT");
+              },
+              gridThickness: 2
+            },
+
+            toolTip: {
+              contentFormatter: function (e) {
+                return "<strong>" + e.entries[0].dataPoint.label + "</strong></br> Start: " + CanvasJS.formatDate(e.entries[0].dataPoint.y[0], "DD - h:mm TT") + "</br>End : " + CanvasJS.formatDate(e.entries[0].dataPoint.y[1], "DD - h:mm TT");
+              }
+            },
+
+            data: [
+              {
+                type: "rangeBar",
+                dataPoints: commits.map(function (commit) {
+                  return {
+                    label: commit.author,
+                    y: [
+                      commit.startTime,
+                      commit.time,
+                    ]
+                  }
+                })
+              }
+            ]
+          });
+        chart.render();
+      }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 700px; width: 100%;"></div>
+</body>
+</html>
+
