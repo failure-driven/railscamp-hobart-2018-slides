@@ -53,3 +53,8 @@ _experimental and needs some tweaking to copy images and use correct paths_
 npm run build-github-pages
 ```
 
+### presentation hack
+```
+cp src/Presenter.js node_modules/mdx-deck/dist/Presenter.js
+```
+
